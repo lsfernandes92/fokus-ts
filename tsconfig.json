@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "app/dist",
+    "target": "ES6",
+    "noEmitOnError": true,
+    "removeComments": true,
+    "moduleResolution": "Node"
+  },
+  "include": [ "app/src/**/*" ],
+}
