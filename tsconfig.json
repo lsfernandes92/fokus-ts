@@ -2,9 +2,10 @@
   "compilerOptions": {
     "outDir": "app/dist",
     "target": "ES6",
+    "noImplicitAny": true,
     "noEmitOnError": true,
     "removeComments": true,
     "moduleResolution": "Node"
   },
-  "include": [ "app/src/**/*" ],
+  "include": [ "app/src" ],
 }

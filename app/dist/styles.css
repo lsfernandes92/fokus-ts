@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__section-task-list-item-complete .app__section-task-icon-status circle {
-    fill: #00F4BF;
+    fill: #3fed18;
 }
 
 .app__form-add-task {
@@ -385,7 +385,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .app_button-edit:disabled {
     color: #e6e6e6;
-    opacity: 0.8;
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.app__form-footer__button--delete:disabled {
+    opacity: 0.2;
     cursor: not-allowed;
 }
 
