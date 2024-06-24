@@ -150,6 +150,13 @@ const updateUI = () : void => {
   })
 }
 
+document.addEventListener("TarefaFinalizada", () => {
+  if (initialState.selectedTask) {
+    initialState.selectedTask.finished = true
+    updateUI()
+  }
+})
+
 const updateFormTo = (action: string) : void => {
   const actionText = {
     "add": { "labelText": "Adicionando tarefa", "btText": "Salvar" },

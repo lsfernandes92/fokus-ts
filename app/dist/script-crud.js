@@ -125,6 +125,12 @@ const updateUI = () => {
         ulTasks === null || ulTasks === void 0 ? void 0 : ulTasks.appendChild(li);
     });
 };
+document.addEventListener("TarefaFinalizada", () => {
+    if (initialState.selectedTask) {
+        initialState.selectedTask.finished = true;
+        updateUI();
+    }
+});
 const updateFormTo = (action) => {
     const actionText = {
         "add": { "labelText": "Adicionando tarefa", "btText": "Salvar" },
